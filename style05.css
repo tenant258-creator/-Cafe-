@@ -1,0 +1,715 @@
+.body {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid 5px purple;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  border: solid 5px purple;
+  border-radius: 20px;
+}
+
+/* box の背景アニメーションを「左流れ」に指定 */
+.box.bg-move {
+    background-image: url('28.jpeg.jpeg'); /* 新しく保存した画像名に変えてください */
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: 0 0;
+    
+    width: 100%;
+    height: 1300px; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+    /* 💡 アニメーション名を「slideBgLeft」に変更 */
+    animation: slideBgLeft 25s linear infinite; /* キャラクターが増えたので25s〜30sくらいでゆっくり流すと見やすいです */
+    will-change: background-position;
+}
+
+/* box23 の中の文字設定（コピペして「.box23」に書き換え） */
+.box.bg-move h1 {
+    color: #fff0f5;                    /* 🍓 いちごミルクのような、ほんのりピンクがかった白 */
+    text-shadow: 2px 2px 8px #4a2e2b;  /* 🍫 ビターチョコレートのような、赤みのある濃いブラウンの影 */
+    font-size: 4rem;
+    font-weight: bold;                 /* 太字にしてくっきり */
+    margin: 50px 0 80px;                     /* 隙間をキュッとまとめる */
+    z-index: 1;
+    background-color: #f8f8ff3d;
+    border-radius: 100px;
+    letter-spacing: 50px;
+    position: relative;
+}
+.box h1:hover {
+  background-color: cornsilk;
+}
+
+.div0 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.a0 {
+    font-size: 4rem;
+    font-weight: 600;
+    background-color: #f8f8ff3d;
+    border-radius: 100px;
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    color: floralwhite;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 8px chocolate;
+    text-decoration: none;
+}
+
+.a0:hover {
+  background-color: pink;
+  opacity: 80%;
+}
+
+/* 💡 背景を左へ動かすアニメーションの定義 */
+@keyframes slideBgLeft {
+    0% {
+        background-position: 0 0; 
+    }
+    100% {
+        /* 💡 マイナスの値を指定することで、画像が左へ流れていきます */
+        background-position: -1920px 0; 
+    }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.img0 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 19%;
+  height: 950px;
+  border: solid 5px purple;
+  border-radius: 20px;
+  margin: 20px 0px 20px;
+}
+
+.box2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.neko1 .den00 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 900px;
+  border-radius: 20px;
+  border: solid 5px purple;
+}
+
+.neko2 {
+  width: 30%;
+  height: 900px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  border: solid 5px purple;
+  border-radius: 20px;
+  color: purple;
+  line-height: 3;
+ }
+
+ .neko2 u {
+   text-decoration-color: red;        /* 下線の色 */
+  text-decoration-thickness: 5px;   /* 下線の太さ */
+ }
+
+.box3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 70px 0px 70px;
+}
+
+.img1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-radius: 20px;
+  border: solid 5px purple;
+  width: 30%;
+  height: 900px;
+}
+
+.box3 .den00 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-radius: 20px;
+  width: 60%;
+  height: 900px;
+  border: solid 5px purple;
+}
+
+.box4 {
+  width: 30%;
+  height: 900px;
+  border-radius: 20px;
+  border: solid 5px purple;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  color: purple;
+  background-color: ghostwhite;
+}
+
+.h2 {
+  font-size: 36px;
+  font-weight: 600;
+  align-items: center;
+  align-content: center;
+}
+
+.box4 h2 u {
+  text-decoration-color: red;        /* 下線の色 */
+  text-decoration-thickness: 5px;   /* 下線の太さ */
+}
+
+.box4 .btn {
+  display: inline-flex;       /* 縦横中央寄せ（Flexbox）を有効にする */
+  justify-content: center;   /* 左右の中央寄せ */
+  align-items: center;        /* 上下（高さ方向）の中央寄せ */
+  text-decoration: none;
+  background-color: #f7a8d8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-shadow: 2px 2px 8px chocolate;
+  width: 60%;
+  height: 100px;
+  font-size: 36px;
+  font-weight: 600;
+  border: solid 5px purple;
+
+  /* 背景色と「ちょっと浮かせる動き」の両方にアニメーションを効かせる */
+  transition: all 0.3s ease;
+}
+
+/* マウスをのせたとき */
+.box4 .btn:hover {
+  background-color: #e887c3; /* 濃いピンクへ */
+  transform: translateY(-3px); /* ほんのり3px上に浮き上がるアニメーションも追加！ */
+  cursor: pointer;
+}
+
+.box5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.box6 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 600;
+  color: red;
+  letter-spacing: 40px;
+  background-color: ghostwhite;
+  border-radius: 20px
+}
+
+.box7 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.img2 {
+  width: 24%;
+  height: 700px;
+  border: solid 5px purple;
+  border-radius: 20px;
+}
+
+.neko4 {
+    width: 100%;
+  height: 100%;
+  letter-spacing: 10px;
+  border-radius: 20px;
+  line-height: 2;
+  font-size: 40px;
+  font-weight: 600;
+  color: purple;
+  margin-bottom: 50px;
+}
+
+.box13 {
+  width: 100%;
+  height: 200px;
+  background-color: ghostwhite;
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.box14 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 50px 0px 50px;
+}
+
+.box15 {
+  width: 25%;
+  height: 800px;
+}
+
+.box15 p {
+  font-size: 40px;
+  font-weight: 800;
+  border-radius: 100%;
+  color: purple;
+  width: 80%;
+  height: 300px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  letter-spacing: 30px;
+  background-color: ghostwhite;
+}
+
+.img3 {
+  width: 80%;
+  height: 400px;
+  border-radius: 50px;
+  align-items: center;
+  align-content: center;
+}
+
+ .box16 {
+  width: 33%;
+  height: 800px;
+  align-items: center;
+  align-content: center;
+}
+
+.img4 {
+  align-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: solid 5px purple;
+  width: 100%;
+  height: 800px;
+}
+
+.box17 {
+  width: 33%;
+  height: 800px;
+  align-items: center;
+  align-content: center;
+  border-radius: 50px;
+  border: solid 5px purple;
+}
+
+.box17 p {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  align-content: center;
+  letter-spacing: 30px;
+  color: purple;
+  background-color: ghostwhite;
+  border-radius: 100px;
+}
+
+.img5 {
+  align-items: center;
+  align-content: center;
+  width: 99%;
+  height: 400px;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.neko4.bg-move{
+  background-image: url(1043.jpeg.jpeg);
+  background-size: 100% 900px;
+  position: relative;
+  width: 100%;
+  height: 900px;
+  border: solid 3px purple;
+}
+
+/* 文字に適用するクラス */
+.slide-title0 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff69b4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  white-space: nowrap;
+  display: inline-block;
+  
+  /* 5秒かけて左から右へ滑らかに移動し、無限リピート（linear = 一定速度） */
+  animation: slideRightInfinite 20s linear infinite;
+
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  text-align: center;
+  line-height: 0;
+  letter-spacing: 20px;
+  width: 100%;
+  height: 50%;
+}
+
+/* 文字に適用するクラス */
+.slide-title1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff69b4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  white-space: nowrap;
+  display: inline-block;
+  
+  /* 5秒かけて左から右へ滑らかに移動し、無限リピート（linear = 一定速度） */
+  animation: slideRightInfinite 20s linear infinite;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-content: flex-end;
+  text-align: center;
+  position: relative;
+  line-height: 0;
+  letter-spacing: 20px;
+  width: 100%;
+  height: 50%;
+}
+
+.neko0.bg-move {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  
+  /* 画像2枚の指定 */
+  background-image: url("1025.jpeg.jpeg"), url("1026.jpeg.jpeg");
+  
+  /* 横幅 50%（隙間なし）、縦幅 900px */
+  background-size: 50% 900px, 50% 900px;
+  
+  /* 1枚目を左(0%)、2枚目を右(100%) */
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  
+  width: 100%;
+  height: 900px;
+  border-radius: 20px;
+  border: solid 5px purple;
+  position: relative;
+}
+
+/* h2要素の設定 */
+h2.neko3 {
+  width: 100%;
+  height: 100%;
+}
+
+/* 左端外から右端外までスライドするアニメーション */
+@keyframes slideRightInfinite {
+  0% {
+    transform: translateX(-100%); /* 左側の画面外からスタート */
+    opacity: 0;
+  }
+  10% {
+    opacity: 1; /* 画面内に入ったらはっきり表示 */
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw); /* 画面の右端外へ移動 */
+    opacity: 0;
+  }
+}
+
+/* 文字に適用するクラス */
+.slide-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff69b4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  white-space: nowrap;
+  display: inline-block;
+  
+  /* 5秒かけて左から右へ滑らかに移動し、無限リピート（linear = 一定速度） */
+  animation: slideRightInfinite 15s linear infinite;
+}
+
+.box18 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 1000px;
+  margin: 50px 0px 50px;
+}
+
+.box19 {
+     width: 25%;
+    height: 900px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: purple;
+    background-color: ghostwhite;
+    border-radius: 50px;
+    line-height: 2.6;
+}
+
+.span0 {
+  color: red;
+}
+
+.span1 {
+  color: lightpink;
+}
+
+.span2 {
+  color: blue;
+}
+
+.span3 {
+  color: purple;
+}
+
+.box20 {
+    width: 33%;
+    height: 900px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    /* border-spacing: 50px; */
+    background-color: ghostwhite;
+    border-radius: 50px;
+    color: purple;
+}
+
+.box20 a {
+    color: purple;
+    text-shadow: 2px 2px 8px snow;
+}
+
+.box20 a:hover {
+  background-color: pink;
+  opacity: 80%;
+}
+
+.box21 {
+      width: 33%;
+    height: 900px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: ghostwhite;
+    border-radius: 50px;
+    color: purple;
+}
+
+.box21 a {
+    color: purple;
+    text-shadow: 2px 2px 8px snow;
+}
+
+.box21 a:hover {
+  background-color: pink;
+  opacity: 80%;
+}
+
+.box20 input[type="text"], .box21 input[type="text"] {
+  width: 35%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.box20 input[type="submit"], .box21 input[type="submit"] {
+  width: 20%;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.box20 input:hover[type="submit"] {
+  background-color: pink;
+}
+
+.box21 input:hover[type="submit"] {
+  background-color: pink;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+}
+
+.box22.bg-move {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-image: url(72.jpg1.jpg);
+  width: 100%;
+  height: 1000px;
+  border-radius: 30px;
+  border: solid 5px purple;
+  background-size: cover;
+}
+
+.box22 img {
+    width: 100%;
+    height: auto; /* 切り取らず、縦横比を保って全体を表示 */
+    display: block;
+}
+
+.div00 {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.box24 {
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: ghostwhite;
+    text-shadow: 2px 2px 8px purple;
+    letter-spacing: 10px;
+    line-height: 3;
+}
+
+.slide-title h3 {
+  font-size: 40px;
+  font-weight: 600;
+  background-color: #f8f8ff2e;
+  border-radius: 100%;
+  height: 600px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 100px;
+  width: auto;
+  height: auto;
+}
+
+.box24 small {
+    font-size: 50px;
+    font-weight: normal;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+    color: magenta;
+    text-shadow: 5px 5px 10px black;
+    -webkit-text-stroke: 1% purple;
+}
+
+
+      /* ページ内のすべての画像に共通の設定 */
+        img {
+          transition: transform 0.3s ease; /* 変化をなめらかにする */
+        }
+
+        /* すべての画像にマウスを乗せたとき、一括で1.1倍（10%拡大）にする */
+        img:hover {
+          transform: scale(1.1);
+        }
+
+        
+
